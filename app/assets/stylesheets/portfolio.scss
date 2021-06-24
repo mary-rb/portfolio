@@ -1,0 +1,75 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.thumbnail {
+  border: 0;
+  border-radius: 0;
+  max-height: 240px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  transition: border .2s ease-in-out;
+}
+
+.thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.projects {
+  margin: 100px 0;
+}
+
+.projects p {
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  max-height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.projects p, .projects h3 {
+  padding: 0 20px 0;
+}
+
+.image_id {
+  border: 0;
+  border-radius: 0;
+  max-height: 500px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  transition: border .2s ease-in-out;
+}
+
+.image_id img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

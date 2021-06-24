@@ -1,0 +1,35 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'slide.jpeg', class: 'd-block w-100' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'slide2.jpeg', class: 'd-block w-100' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'slide3.jpeg', class: 'd-block w-100' %>
+    </div>
+  </div>
+</div>
+<div class="container-xl">
+  <div class="projects">
+    <% @projects.each_slice(2) do | p1, p2 | %>
+      <div class="row mt-4">
+        <div class="col-sm-6 pe-3">
+          <%= link_to portfolio_path(p1) do %>
+            <div class="thumbnail"><%= image_tag p1.image_url %></div>
+            <h3><%= p1.title %></h3>
+            <p><%= p1.description %></p>
+          <% end %>
+        </div>
+        <div class="col-sm-6 ps-3">
+          <%= link_to portfolio_path(p2) do %>
+            <div class="thumbnail"><%= image_tag p2.image_url %></div>
+            <h3><%= p2.title %></h3>
+            <p><%= p2.description %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
