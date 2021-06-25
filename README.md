@@ -14,7 +14,7 @@ This project uses following versions of Ruby and Rails:
 ##### 1. Check out the repository
 
 ```bash
-git clone git@github.com:mary-rb/portfolio.git
+git clone git@github.com:mintmolly/portfolio.git
 ```
 
 ##### 2. Create .env file
